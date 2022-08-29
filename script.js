@@ -54,17 +54,27 @@ function singleRound() {
 //THERE is problems with the below code
 
 function game() {
+    let playerScore = 0;
+    let computerScore = 0;
     for (let i = 0; i < 5; i++) {
         let outcome = singleRound();
-        let playerScore = 0;
-        let computerScore = 0;
         if (outcome === "Tie Game") {
             console.log ("No Change in score.");
         } else if (outcome === "Player Wins") { 
-            console.log ("Player score is: " + (playerScore += 1));
+            console.log ("Player score is: " + (playerScore + 1));
+            playerScore++;
         } else { 
-            console.log ("Computer score is: " + (computerScore += 1));
+            console.log ("Computer score is: " + (computerScore + 1));
+            computerScore++;
         }; 
-    }}
+    }
+    if (computerScore > playerScore) {
+        console.log ("Computer won the game!");
+    } else if (computerScore === playerScore){
+        console.log ("Tie Game");
+    } else {
+        console.log ("Player won the game!");
+    }
+}
 
 game();
