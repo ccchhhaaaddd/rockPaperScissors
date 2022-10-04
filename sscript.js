@@ -6,17 +6,21 @@ function getComputerChoice() {
     return randomChoice;
 }
 
-/* take computer choice,  get player choice, and play one round 
+// prompt player for their choice and then standardize the string input
+
+function getPlayerChoice() {
+    let playerSelection = window.prompt('Please type Rock, Paper, or Scissors');
+    let fixedPlayerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
+    return fixedPlayerSelection;
+}
+
+/* take computer choice, player choice, and play one round 
 of the game - returning a string that declares the winner 
 (example: "You lose Paper beats Rock") */
 
 function singleRound() {
-    const button = document.querySelector('button');
     let computer = getComputerChoice();
-    let player = button.addEventListener('click', e => { 
-        let choice = e.target.className;
-        return choice;
-    });
+    let player = getPlayerChoice();
 
     if (player === computer) {
         console.log("Tie Game");
@@ -47,6 +51,7 @@ function singleRound() {
 }
 
 // create game() function that keeps score and reports a winner/loser
+//THERE is problems with the below code
 
 function game() {
     let playerScore = 0;

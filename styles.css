@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin:0;
+    overflow: hidden;
+    font-family: monospace;
+    overflow: scroll;
+}
+
+/* HEADER SECTION */
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #706C61;
+    color: #E5E7EB;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #2A2B2A;
+}
+
+/* INSTRUCTIONS SECTION */
+
+.instructions{
+    display: flex;
+    justify-content: center;
+    background-color: #F8F4E3;
+    color: #2A2B2A;
+    padding: 10px;
+    text-align: center;
+}
+
+/* SCORING SECTION */
+
+.scoring{
+    background-color: #F8F4E3;
+
+}
+
+.listOfScores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F4E3;
+    color: #2A2B2A;
+    padding: 10px;
+    text-align: center;
+    gap: 30px;
+    font-size: 30px;
+}
+
+/* GAME SECTION */
+
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F8F4E3;
+    color: #2A2B2A;
+    padding: 10px;
+    text-align: center;
+    gap: 30px;
+    font-size: 40px;
+}
+
+button{
+    padding: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:hover {opacity: 0.6}
+
+/* FOOTER SECTION */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #2A2B2A;
+    color: #E5E7EB;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+/* GENERAL FORMATTING */
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Color Palette
+
+#2A2B2A
+#706C61
+#F8F4E3
+
+*/
+
