@@ -69,9 +69,11 @@ button{
     border: none;
     background: none;
     cursor: pointer;
+    transition: 100ms;
 }
 
-button:hover {opacity: 0.6}
+button:hover {
+    transform: scale(1.2);}
 
 /* FOOTER SECTION */
 
