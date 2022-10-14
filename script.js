@@ -22,25 +22,31 @@ function singleRound(player) {
     if (you === "Rock") {
         if (opponent === "Scissors") {
             playerScore += 1;
+            console.log("Rock beats scissors, congratulations human!");
         }
         else if (opponent === "Paper") {
             computerScore += 1;
+            console.log("Paper beats rock, better luck next time human!");
         }
     }
     else if (you === "Scissors") {
         if (opponent === "Paper") {
             playerScore += 1;
+            console.log("Scissors beats paper, congratulations human!");
         }
         else if (opponent === "Rock") {
             computerScore += 1;
+            console.log("Rock beats scissors, better luck next time human!");
         }
     }
     else if (you === "Paper") {
         if (opponent === "Rock") {
             playerScore += 1;
+            console.log("Paper beats rock, congratulations human!");
         }
         else if (opponent === "Scissors") {
             computerScore += 1;
+            console.log("Scissors beats paper, better luck next time human!");
         }
     }
 
