@@ -2,10 +2,7 @@
 
 Game: Rock Paper Scissors
 
-First iteration is console only javascript development of the game of rock paper scissors.
+![screen](https://user-images.githubusercontent.com/110076781/196580187-3e60596e-7695-4d2a-9f28-a883ce893bb4.png)
 
-    Goal is to create a five round game that keeps score and reports a winner or loser at the end.
 
-Second iteration TBD.
 
-    Goal is to
